@@ -1,0 +1,90 @@
+/*
+ * Design tokens — the single place to change the look of the app.
+ * Colors are stored as space-separated RGB triplets so Tailwind can apply opacity
+ * (e.g. `bg-accent/10`). Tailwind reads these in tailwind.config.ts.
+ */
+:root {
+  /* Surfaces: white, with a soft lavender tint for insets (from the reference site) */
+  --color-canvas: 255 255 255; /* page background */
+  --color-surface: 255 255 255; /* cards */
+  --color-surface-2: 243 241 249; /* inset / hover areas, light lavender */
+  --color-line: 221 216 232; /* borders, dividers */
+
+  /* Text: charcoal */
+  --color-ink: 32 32 32;
+  --color-ink-muted: 98 98 110;
+
+  /* Brand teal. "brand" is the bright reference teal for fills and graphics only;
+     "accent" is a darker teal that is readable as text and on buttons. */
+  --color-brand: 70 176 167;
+  --color-accent: 16 118 110;
+  --color-accent-strong: 10 90 84;
+  --color-accent-soft: 225 244 241;
+  --color-accent-ink: 255 255 255; /* text on accent */
+
+  /* Secondary green */
+  --color-sage: 40 112 70;
+  --color-sage-soft: 226 242 232;
+
+  /* Orange: stars, drafts and "new" highlights (graphics; text on it stays charcoal) */
+  --color-highlight: 224 110 0;
+  --color-highlight-soft: 253 236 215;
+
+  /* Calm neutral used for the Mia allergy badge (deliberately not red) */
+  --color-calm: 68 62 96;
+  --color-calm-soft: 234 231 243;
+
+  /* Feedback */
+  --color-success: 40 112 70;
+  --color-success-soft: 226 242 232;
+  --color-danger: 170 50 60;
+  --color-danger-soft: 250 228 230;
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+
+  /* Shadows */
+  --shadow-card: 0 1px 2px rgb(40 30 70 / 0.06), 0 4px 14px rgb(40 30 70 / 0.06);
+  --shadow-raised: 0 2px 4px rgb(40 30 70 / 0.08), 0 12px 28px rgb(40 30 70 / 0.14);
+
+  /* Layout */
+  --gutter: 1rem; /* page side padding on phones */
+  --touch-min: 2.75rem; /* 44px minimum touch target */
+  --bottom-nav-height: 4.25rem;
+}
+
+.dark {
+  --color-canvas: 26 26 29;
+  --color-surface: 35 35 40;
+  --color-surface-2: 46 44 57;
+  --color-line: 67 64 82;
+
+  --color-ink: 244 244 246;
+  --color-ink-muted: 182 180 194;
+
+  --color-brand: 70 176 167;
+  --color-accent: 112 206 196;
+  --color-accent-strong: 152 226 218;
+  --color-accent-soft: 24 58 56;
+  --color-accent-ink: 20 20 22;
+
+  --color-sage: 132 202 152;
+  --color-sage-soft: 28 54 38;
+
+  --color-highlight: 246 152 52;
+  --color-highlight-soft: 72 47 20;
+
+  --color-calm: 208 202 228;
+  --color-calm-soft: 52 48 70;
+
+  --color-success: 132 202 152;
+  --color-success-soft: 28 54 38;
+  --color-danger: 244 150 158;
+  --color-danger-soft: 76 36 42;
+
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.3), 0 4px 14px rgb(0 0 0 / 0.25);
+  --shadow-raised: 0 2px 4px rgb(0 0 0 / 0.4), 0 12px 28px rgb(0 0 0 / 0.45);
+}
